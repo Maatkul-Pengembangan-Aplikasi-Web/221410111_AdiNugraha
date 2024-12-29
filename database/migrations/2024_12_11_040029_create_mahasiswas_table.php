@@ -16,11 +16,10 @@ return new class extends Migration
             $table->string('nama');
             $table->integer('npm');
             $table->string('nama_prodi');
-    
             $table->string('foto')->nullable();
             $table->timestamps();
 
-            $table->foreign('id')->references('id')->on('prodis')->onDelete('cascade');
+            $table->foreign('nama_prodi')->references('nama')->on('prodis')->onDelete('cascade');
             
         });
     }

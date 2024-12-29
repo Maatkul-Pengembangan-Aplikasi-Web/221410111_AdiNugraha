@@ -50,7 +50,7 @@ public function update(Request $request, $id)
         'nama' => $request->nama
     ]);
 
-    return redirect()->route('/prodi')->with('success', 'Program Studi berhasil diupdated');
+    return redirect()->route('/prodi')->with('success', 'Program Studi berhasil dirubah');
 }
 public function delete($id)
 {

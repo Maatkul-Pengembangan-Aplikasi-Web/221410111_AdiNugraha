@@ -17,7 +17,7 @@ class MahasiswaController extends Controller
         $search = $request->input('search');
         $mahasiswas = Mahasiswa::where('nama', 'like', '%' . $search . '%')->orderBy('id', 'desc')->get();
 
-        return view('mahasiswa.index', compact('mahasiswas', 'search'));
+        return view ('mahasiswa.index', compact('mahasiswas', 'search'));
     }
 
     /**

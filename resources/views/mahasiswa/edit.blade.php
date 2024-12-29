@@ -20,7 +20,7 @@
                         @method('PUT')
                         <div class="row mb-3">
                             <div class="col"> Nama Lengkap
-                                <input type="text" name="nama" class="form-control" placeholder="Adi Nugraha"
+                                <input type="text" name="nama" class="form-control" placeholder="Masukan Nama Anda"
                                     value="{{ $mahasiswa->nama }}">
                                 @error('nama')
                                     <span class="text-danger">{{ $message }}</span>
@@ -30,7 +30,7 @@
 
                         <div class="row mb-3">
                             <div class="col"> NPM
-                                <input type="number" name="npm" class="form-control" placeholder="221410111"
+                                <input type="number" name="npm" class="form-control" placeholder="Masukan Nomor Pokok Mahasiswa"
                                     value="{{ $mahasiswa->id }}">
                                 @error('npm')
                                     <span class="text-danger">{{ $message }}</span>
